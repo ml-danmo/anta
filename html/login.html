@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" href="../css/modules/reset.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../static/iconfont/iconfont.css">
+</head>
+<body>
+    <div id="head">
+        
+    </div>
+
+    <main>
+        <div id="box">
+            <div class="laying">
+                <div class="login_box">
+                    <form action="">
+                        <input type="text" placeholder="邮箱/手机号码/安踏帐号" name="userName" id="userName">
+                        <input type="password" placeholder="密码" name="pwd" id="pwd">
+                        <input type="submit" value="立即登录" name="btn" id="btn">
+                    </form>
+                </div>
+                <!-- <fieldset class="fied">
+                    <legend align="center" class="leg">其他方式登录</legend>
+                </fieldset> -->
+                <div class="line">
+                    <hr>
+                    <p>其他方式登录</p>
+                </div>
+                <div class="icon">
+                    <a href=""><span class="iconfont icon-faxian"></span></a>
+                    <a href=""><span class="iconfont icon-faxian"></span></a>
+                    <a href=""><span class="iconfont icon-faxian"></span></a>
+                    <a href=""><span class="iconfont icon-faxian"></span></a>
+                </div>
+                <div class="zc">
+                    <span>账号注册</span> | <span>忘记密码</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="foo">
+
+    </div>
+</body>
+</html>
+<script src="../js/modules/jQuery.js"></script>
+<script >
+    $("#head").load("head.html",function(){});
+    $("#foo").load("foot.html",function(){});
+
+
+
+</script>

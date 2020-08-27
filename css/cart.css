@@ -1,0 +1,134 @@
+#carBox{
+    width: 1200px;
+    margin:50px auto;
+    min-height: 400px;
+    
+}
+#carBox h1{
+    display: inline-block;
+    font-size: 28px;
+    font-weight: 600;
+    color: #000;
+    overflow: hidden;
+    vertical-align: middle;
+    margin-bottom: 20px;
+    
+}
+#carBox h1 span{
+    color: #999;
+    margin-left: 10px;
+    vertical-align: bottom;
+    display: inline-block;
+    line-height: 35px;
+    font-size: 12px;
+    font-weight: normal;
+}
+#carBox>input{
+    margin: 5px 0 15px;
+    font-size: 12px;
+    display: inline-block;
+}
+.goods-list .goods{
+    width: 100%;
+    height: 140px;
+    border-bottom: 1px solid #999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.goods-list .goods .check{
+    width: 40px;
+}
+.goods-list .goods .pic{
+    width: 100px;
+    height: 100px;
+}
+.goods-list .goods .pic img{
+    width: 100%;
+    height: 100%;
+}
+.goods-list .goods .goods-left{
+    width: 800px;
+    color: #777;
+    font-size: 13px;
+}
+.goods-list .goods .goods-left h3{
+    color: #000;
+    font-size: 18px;
+}
+.goods-list .goods .goods-left button{
+    background-color: none;
+    height: 30px;
+    width: 30px;
+}
+.goods-list .goods .goods-left input{
+    text-align: center;
+    height: 26px;
+    width: 80px;
+}
+.goods-list .goods .goods-right{
+    width: 80px;
+    text-align: right;
+    color: #777;
+    font-size: 13px;
+}
+.goods-list .goods .goods-right span{
+   font-size: 16px;
+   color: #000;
+}
+.goods-list .goods .goods-right del{
+   display: inline-block;
+   margin: 10px 0 20px;
+}
+
+#bottom-ban{
+    position: fixed;
+    height: 70px;
+    overflow: hidden;
+    width: 100%;
+    min-width: 1280px;
+    border-top: 1px solid #5d5d5d;
+    bottom: 0;
+    left: 0;
+    background: rgba(41, 41, 41, 0.9);
+    color: #fff;
+    z-index: 99;
+
+}
+#bottom{
+    width: 1280px;
+    height: 58px;
+    margin: auto;
+
+}
+#bottom .bottom-price{
+    width: 1000px;
+}
+#bottom .bottom-price .left{
+    width: 152px;
+    height: 40px;
+    margin-top: 15px;
+    line-height: 40px;
+}
+#bottom .bottom-price .left span{
+   margin: 0 10px;
+}
+#bottom .bottom-price .right {
+   margin: 0 10px;
+   height: 40px;
+}
+#bottom .bottom-price .right p{
+  font-size: 18px;
+}
+#bottom .js{
+    display: block;
+    height: 40px;
+    width: 150px;
+    text-align: center;
+    background: #ed4025;
+    line-height: 40px;
+    font-size: 15px;
+}
+
+
+

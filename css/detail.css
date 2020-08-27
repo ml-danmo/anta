@@ -1,0 +1,226 @@
+#wrap{
+    padding: 2px 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+#small{
+    width: 645px;
+    margin-left: 15px;
+    height: 645px;
+    position: relative;
+    border: 1px solid #eee;
+    overflow: hidden;
+    top: 100px;
+    left: 100px;
+    display: inline-block;
+}
+#small img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#mask{
+    width: 322px;
+    height: 322px;
+    position: absolute;
+    display: none;
+    background-color:pink;
+    opacity: 0.5;
+}
+#big{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top:200px;
+    left:850px;
+    overflow: hidden;
+    /* border: 1px solid red; */
+    background-color: #fff;
+    z-index: 100;
+    display: none;
+
+}
+#big img{
+    width: 600px;
+    height: 900px;
+    position: absolute;
+}
+#content{
+    display: inline-block;
+    height: 640px;
+    position: absolute;
+    top:100px;
+    left:850px;
+    margin-left: 50px;
+}
+#content .type{
+    font-size: 14px;
+    color: #999;
+    line-height: 25px;
+}
+#content .title{
+    font-size: 25px;
+    line-height: 40px;
+}
+#content .num{
+    font-size: 15px;
+    color: #999;
+}
+#content .price{
+    font-size: 15px;font-size: 22px;
+    color: #000;
+    font-weight: 600;
+    line-height: 30px;
+    margin: 15px 0;
+}
+#content .price span{
+    color: #999;
+    text-decoration: line-through;
+    font-weight: normal;
+    margin-left: 10px;
+    font-size: 15px;
+}
+#content .cu{
+    background: #f7f7f7;
+    padding: 20px;
+}
+#content .cu div:nth-of-type(1){
+    height: 22px;
+    line-height: 20px;
+    width: 44px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 13px;
+    border-radius: 2px;
+    margin-top: 2px;
+    display: inline-block;
+}
+#content .cu div:nth-of-type(2){
+    margin-left: 60px;
+    display: inline-block; 
+}
+#content .style{
+    margin:50px 0 10px;
+    height: 80px;
+    width: 80px;
+    border: 1px solid #eee;
+    cursor: pointer;
+}
+#content .style img{
+    height: 100%;
+    width: 100%;
+}
+#content .duibiao{
+    font-size: 14px;
+    color: #999;
+    line-height: 25px;
+}
+#content .duibiao .icon-question-b{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    vertical-align: middle;
+    background: url(https://anta-cn-web.obs.myhwclouds.com/theme/images/icons/question-cr-bw.svg) no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+    position: relative;
+    top: -1px;
+    margin-left: 4px;
+}
+#content .goods-info{
+    width: 490px;
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    padding: 10px 0;
+    line-height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#content .goods-info span{
+    width: 50px;
+    display: inline-block;
+    
+}
+#content .goods-info input{
+    border: 0;
+    height: 30px;
+    width: 100px;
+    padding: 0 10px;
+    line-height: 30px;
+    outline: 0;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+}
+#content .goods-info i{
+    display:inline-block;
+    width: 10%;
+    height: 30px;
+    position: relative;
+    top: 15px;
+    border-right: 1px solid #ccc;
+    line-height: 30px;
+    margin-right: 20px;
+}
+#content .goods-info i::before{
+    border-left: 7px solid #666;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    top: 3px;
+    left: 7px;
+    position: absolute;
+    content: '';
+}
+#content .goods-info .i2{
+    border-right: none;
+    margin-right: 0;
+}
+#content .add .car{
+    height: 60px;
+    line-height: 58px;
+    display:inline-block;
+    width: 45%;
+    text-align: center;
+    border: 1px solid #666;
+    color: #000;
+    font-size: 17px;
+    margin-top: 10px;
+    background: #fff;
+    margin-right: 40px;
+}
+#content .add .buy{
+    height: 60px;
+    line-height: 58px;
+    display: inline-block;
+    width: 45%;
+    text-align: center;
+    border: 1px solid #666;
+    color: #fff;
+    font-size: 17px;
+    margin-top: 10px;
+    background: #000;
+}
+
+#list{
+    width: 50px;
+    height: 640px;
+    display: inline-block;
+    position: relative;
+    top: -318px;
+    left: 100px;
+}
+#list li{
+    width: 48px;
+    height: 48px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+#list li img{
+    width: 100%;
+    height: 100%;
+  
+}

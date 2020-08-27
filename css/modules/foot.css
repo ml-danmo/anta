@@ -1,0 +1,92 @@
+@charset "utf-8";
+footer{
+
+}
+#foot-top{
+    height: 240px;
+    width: 100%;
+    padding: 50px 0;
+    background-color: #dd0000;
+    box-sizing: border-box;
+}
+#foot-top .foot-top-center{
+    width: 360px;
+    margin: auto;
+    text-align: center;
+}
+#foot-top h3{
+    color: #fff;
+    font-size: 34px;
+    
+}
+#foot-top p{
+    color: #fff;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 40px;
+    margin-top: 5px;
+}
+#foot-top .foot-pic{
+    margin-top: 10px;
+}
+#foot-top .foot-pic img{
+    margin:0 15px;
+}
+#foot-top .foot-pic .big_winxin{
+   position: absolute;
+   left: 50px;
+   top: -130px;
+   width: 120px;
+   height: 120px;
+   display: none;
+}
+#foot-top .foot-pic .big_winxin img{   
+    width: 100%;
+    height: 100%;
+}
+#foot-top .foot-pic .pic1:hover .big_winxin{   
+    display: block;
+}
+
+/* 下部分 */
+#foot-bottom{
+    background-color: #000;
+}
+#foot-bottom-con{
+    height: 240px;
+    width: 1280px;
+    margin: auto;
+    padding: 60px 60px;
+    color: #fff;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+#foot-bottom-con a{
+    color: #fff;
+}
+#foot-bottom-con .pic{
+    margin: 10px;
+    height: 96px;
+    width: 250px;
+    margin-right: 130px;
+}
+#foot-bottom-con .pic img{
+    height: 96px;
+    width: 250px;
+}
+#foot-bottom-con .content{
+    width: 700px;
+    height: 138px;
+}
+#foot-bottom-con .sea{
+    margin-bottom: 10px;
+}
+#foot-bottom-con .content span{
+   margin: 0 10px;
+}
+#foot-bottom-con .foot-list{
+   margin-top: 34px;
+}
+#foot-bottom-con .foot-list li{
+   float: left;
+}

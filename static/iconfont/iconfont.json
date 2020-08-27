@@ -1,0 +1,128 @@
+{
+  "id": "1892636",
+  "name": "youku",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1861934",
+      "name": "zuqiu",
+      "font_class": "zuqiu",
+      "unicode": "e655",
+      "unicode_decimal": 58965
+    },
+    {
+      "icon_id": "1883231",
+      "name": "娃娃",
+      "font_class": "wawa",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "1916652",
+      "name": "wode",
+      "font_class": "wode",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "2515471",
+      "name": "闹铃",
+      "font_class": "tubiaozhizuomoban",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "3104394",
+      "name": "动漫",
+      "font_class": "dongman",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "3217827",
+      "name": "放大镜",
+      "font_class": "icon-",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "6306730",
+      "name": "vip",
+      "font_class": "vip",
+      "unicode": "e80b",
+      "unicode_decimal": 59403
+    },
+    {
+      "icon_id": "7536589",
+      "name": "发现",
+      "font_class": "tieqijunICON",
+      "unicode": "e64e",
+      "unicode_decimal": 58958
+    },
+    {
+      "icon_id": "8184785",
+      "name": "youku",
+      "font_class": "youku",
+      "unicode": "eb63",
+      "unicode_decimal": 60259
+    },
+    {
+      "icon_id": "8833300",
+      "name": "zhibo",
+      "font_class": "zhibo",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "8904722",
+      "name": "发现",
+      "font_class": "faxian",
+      "unicode": "e656",
+      "unicode_decimal": 58966
+    },
+    {
+      "icon_id": "10143836",
+      "name": "vip",
+      "font_class": "vip1",
+      "unicode": "e691",
+      "unicode_decimal": 59025
+    },
+    {
+      "icon_id": "12382181",
+      "name": "VIP",
+      "font_class": "VIP",
+      "unicode": "e695",
+      "unicode_decimal": 59029
+    },
+    {
+      "icon_id": "13644649",
+      "name": "星球",
+      "font_class": "xingqiu-copy",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "13814905",
+      "name": "jiangbei",
+      "font_class": "jiangbei",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "13857182",
+      "name": "星球",
+      "font_class": "iconset0456",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "14313194",
+      "name": "下载",
+      "font_class": "xiazai",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+@charset "utf-8";
+
+#header{
+    background-color: #fff;
+    width: 100%;
+}
+#header #head-top{
+    height: 50px;
+    line-height: 50px;
+}
+#header #head-top .right{
+    width: 330px;
+    padding-right: 70px;
+    
+}
+#header #head-top .right .cc{
+    height: 10px;
+    display: inline-block;
+    width: 10px;
+    /* vertical-align: middle;
+    background-repeat: no-repeat;
+    background-size: 20px auto;
+    background-position: center center;
+    background-image: url(https://anta-cn-web.obs.myhwclouds.com/theme/images/icons/cart-g.svg);
+     */
+}
+#header .user{
+    width: 152px;
+    font-size: 12px;
+    display: inline-block;
+    
+}
+#head-top .bloc{
+    display: inline-block;
+    font-size: 18px;
+}
+#head-top .gwc-icon{
+    margin: 0 30px;
+}
+#head-top .en{
+    margin-left: 30px;
+}
+
+ #head-nav{
+    height: 100px;
+    width: 100%;
+    border-top:  1px solid #ccc;
+    border-bottom:  1px solid #ccc;
+    position: relative;
+}
+#header .iconfont{
+    font-size: 20px;
+}
+#head-nav .logo{
+    width: 50px;
+    height: 98px;
+    float: left;
+    text-align: center;
+    margin-left: 218px;
+   
+}
+#head-nav .logo img{
+    width: 53px;
+    height: 28px;
+    margin-top:36px ;
+}
+#header .nav{
+    float: right;
+    margin-right: 70px;
+  
+}
+#header .nav>li{
+   float: left;
+}
+#header .nav>li>a{
+   display: inline-block;
+   line-height: 98px;
+   margin: 0 25px;
+   font-size: 16px;
+   font-weight: bold;
+
+}
+#header .nav .search-box{
+    width: 210px;
+    height: 38px;
+    border:  1px solid #ccc;
+    border-radius: 5px;
+
+    margin:29px 12px 0 12px;
+}
+#header .nav .search-box a{
+    display: inline-block;
+    height: 26px;
+    border-right: 1px solid #ccc;
+    padding:0 8px;
+    margin-top: 6px;
+}
+#header .nav .search-box input{
+    display: inline-block;
+    border: 0;
+    height: 26px;
+    line-height: 26px;
+    width: 160px;
+    vertical-align: middle;
+    color: #000;
+    font-size: 15px;
+    text-indent: 10px;
+    outline: 0;
+
+}
+#header .nav .search-box .iconfont{
+    font-size: 24px;
+}
+
+/* 男子隐藏列表 */
+
+#head-nav .nav-list {
+    /* position: absolute;
+    left: 0;
+    top: 100px;
+    padding-left:0px;
+    display: none;
+    z-index: 33;
+    background-color: #fff */
+    
+    display: none;
+    position: absolute;
+    height: auto;
+    background: #fff;
+    z-index: 2;
+    overflow-y: auto;
+    text-align: center;
+    padding: 30px 0 0;
+    width: 100%;
+    left: 0;
+    top: 100px;
+    overflow-x: hidden;
+}
+#header .nav>li:hover  .nav-list{
+    display: block;
+}
+#head-nav .nav-list .list{
+    height: 386px;
+    margin-top: 40px;
+    border-right: 1px solid #ccc;
+    float: left;
+    margin-left: 36px;
+    width: 150px; 
+}
+
+#head-nav .nav-list .clothes1{
+    border: none; 
+}
+#head-nav .nav-list .hot{
+    border: none; 
+}
+#head-nav .nav-list .sport{
+    height: 200px;
+}
+#head-nav .nav-list .hot span{
+    line-height:  18px;
+}
+
+#head-nav .nav-list li{
+    font-size: 12px;
+    margin-bottom: 10px;   
+}
+#head-nav .nav-list .vis{
+    color: transparent;
+}
+#head-nav .nav-list .li1{
+    font-weight: bold;
+    font-size: 14px;  
+    margin-bottom: 8px; 
+}
+/* 女子 */
+#head-nav .women .nav-list .series{
+    margin-left: 136px;
+}
+/* 儿童 */
+#head-nav .child .nav-list .series{
+    margin-left: 136px;
+}
+#head-nav .child .nav-list .list .li2{
+    margin-bottom: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+

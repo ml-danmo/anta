@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/modules/reset.css">
+    <link rel="stylesheet" href="../css/detail.css">
+</head>
+<body>
+    <div id="head"></div>
+    <div id="wrap">
+        <ul id="list">
+            <li><img src="https://img.fishfay.com/shopgoods/1/112011101C/112011101C-6-3.jpg?x-image-process=image/resize,w_220,h_220" alt=""></li>
+            <li><img src="https://img.fishfay.com/shopgoods/1/112011101C/112011101C-6-3.jpg?x-image-process=image/resize,w_220,h_220" alt=""></li>
+            <li><img src="https://img.fishfay.com/shopgoods/1/112011101C/112011101C-6-4.jpg?x-image-process=image/resize,w_220,h_220" alt=""></li>
+            <li><img src="https://img.fishfay.com/shopgoods/1/112011101C/112011101C-6-4.jpg?x-image-process=image/resize,w_220,h_220" alt=""></li>
+        </ul>
+        <div id="small">
+            <img src="https://img.fishfay.com/shopgoods/1/112011101C/zt-112011101C.jpg?x-image-process=image/resize,w_800,h_800" alt="">
+            <div id="mask"></div>
+        </div>
+        <div id="big">
+            <img src="https://img.fishfay.com/shopgoods/1/112011101C/zt-112011101C.jpg?x-image-process=image/resize,w_800,h_800" alt="">
+        </div>
+        <div id="content">
+            <p class="type">篮球鞋</p>
+            <h2 class="title">安踏KT5情人节配色男篮球鞋2020新品</h2>
+            <p class="num">款号：112011101C</p>
+            <p class="price">￥649.00 <span>￥749.00</span></p>
+            <div class="cu">
+                <div>促销</div>
+                <div>
+                    <p>官方商城满200元包邮</p>
+                    <p>满99减10满200减20满300减60满398减130</p>
+                </div>
+            </div>
+            <div class="style">
+                <img src="https://img.fishfay.com/shopgoods/1/112011101C/zt-112011101C.jpg?x-image-process=image/resize,w_800,h_800" alt="">
+            </div>
+            <p class="duibiao">查看尺码对照表 
+                <i class="icon-question-b"></i>
+            </p>
+            <div class="goods-info">
+                <span>尺码：</span>
+                <input type="text" placeholder="请选择尺码">
+                <i class="icon-triangle-right"></i>
+                <span>数量：</span>
+                <input type="text" placeholder="1">
+                <i class="icon-triangle-right i2"></i>
+            </div>
+            <div class="add">
+                <a href="" class="car">加入购物车</a>
+                <a href="" class="buy">加入购物车</a>
+            </div>
+        </div>
+    </div>
+    <div id="foo"></div>
+</body>
+</html>
+<script src="../js/modules/jQuery.js"></script>
+<script>
+$("#small").mouseenter(function(){
+    $("#mask,#big").show();
+}).mouseleave(function(){
+    $("#mask,#big").hide();
+}).mousemove(function(e){
+    let l = e.pageX - $(this).offset().left - $("#mask").width()*0.5;
+    let t = e.pageY - $(this).offset().top - $("#mask").height()*0.5;
+    if(l <= 0){
+        l=0;
+    }
+    if(l >= $(this).width()-$("#mask").width()){
+        l=$(this).width()-$("#mask").width();
+    }
+    if(t <= 0){
+        t=0;
+    }
+    if(t >= $(this).height()-$("#mask").height()){
+        t=$(this).height()-$("#mask").height();
+    }
+
+    $("#mask").css({
+        left:l,
+        top:t
+    })
+    
+    let n = $("#big img").width()/$(this).width()
+    $("#big img").css({
+        left:-n*l,
+        top:-n*t
+    })
+})
+
+
+$("#head").load("head.html",function(){});
+$("#foo").load("foot.html",function(){});
+
+
+
+</script>

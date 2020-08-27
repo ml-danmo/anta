@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册</title>
+    <link rel="stylesheet" href="../css/modules/reset.css">
+    <link rel="stylesheet" href="../css/registered.css">
+    <link rel="stylesheet" href="../static/iconfont/iconfont.css">
+</head>
+<body>
+    <div id="head">
+        
+    </div>
+
+    <main>
+        <div id="box">
+            <div class="laying">
+               <ul class="tab-list">
+                   <li class="active">手机注册</li>
+                   <li>邮箱注册</li>
+               </ul>
+               <div class="tab-content">
+                    <div class="phone show">
+                        <form action="" method="">
+                            <h4>请输入手机号码注册：</h4>
+                            <input type="text" placeholder="手机号码" name="phNum" id="phNum" class="put">
+                            <input type="text" placeholder="图片验证码" name="code"  class="code"> <span>dfb </span><br>
+                            <input type="checkbox" name="check"  class="check"> 我已充分阅读、理解并接受隐私政策的全部内容
+                            <p class="reg"></p>
+                            <input type="submit" value="确认"  class="sub">
+                        </form>
+                    </div>
+                    <div class="eamil">
+                        <form action="" method="">
+                            <h4>请输入邮箱地址注册：</h4>
+                            <input type="text" placeholder="邮箱地址" name="email_" id="email_" class="put">
+                            <input type="text" placeholder="登录密码" name="pwd" id="e_pwd" class="put">
+                            <input type="text" placeholder="图片验证码" name="code"  class="code"> <span>dfb </span><br>
+                            <input type="checkbox" name="check"  class="check"> 我已充分阅读、理解并接受隐私政策的全部内容
+                            <p class="reg"></p>
+                            <input type="submit" value="确认"  class="sub">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <div id="foo">
+        
+    </div>
+</body>
+</html>
+<script src="../js/modules/jQuery.js"></script>
+<script >
+    $("#head").load("head.html",function(){});
+    $("#foo").load("foot.html",function(){});
+
+    let tabLi = document.querySelectorAll(".tab-list li");
+    let tabDiv = document.querySelectorAll(".tab-content>div");
+    
+    for(let i=0;i<tabLi.length;i++){
+        let index = i;
+        tabLi[i].onclick=function(){
+            for(let i=0;i<tabLi.length;i++){
+                tabLi[i].className = "";
+                tabDiv[i].className = "";
+            }
+            this.className = "active";
+            tabDiv[index].className = "show";
+        }
+    }
+
+
+//ajax
+    
+    let email_ = document.querySelector("#email_")
+    let pwd = document.querySelector("#e_pwd")
+    let sub = document.querySelectorAll(".sub")
+
+    for(let i =0;i<sub.length;i++){
+        sub[i].onclick = function(){
+            let phNum = document.querySelector("#phNum")
+            let xhr = new XMLHttpRequest();
+            xhr.open("post","../php/registered.php",true);
+            xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded")
+            xhr.onreadystatechange = function(){
+                if(xhr.status == 200 && xhr.readyState == 4){
+                    fn(xhr.responseText);
+                }
+            }
+
+            xhr.send("phNum="+phNum.value+"&email_="+email_.value+"&pwd="+pwd.value)
+
+            function fn(textq){
+                if(textq==0){
+                    //confirm("用户已存在");
+                    location.href = "login.html";
+            
+                }
+                else if(textq==1){
+                    //confirm("注册成功");
+                     location.href = "login.html";
+                }
+                // console.log(text);
+            }
+        }
+    }
+    
+
+
+</script>
